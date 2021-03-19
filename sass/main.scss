@@ -1,0 +1,31 @@
+@import "abstract/variables";
+@import "abstract/mixins";
+
+@import "components/button";
+@import "components/bg-video";
+@import "components/card";
+@import "components/form";
+
+@import "layout/grid";
+
+@import "pages/home";
+
+@import "base/typography";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+}
+
+body{
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+}
+

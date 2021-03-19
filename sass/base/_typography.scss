@@ -1,0 +1,20 @@
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7em;
+  color: $color-text;
+
+  // font-family: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 14px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  @include respond(tab-land){
+    font-size: 12px;
+  }
+  @include respond(smart-phone){
+    font-size: 12px;
+  }
+}

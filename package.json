@@ -1,0 +1,14 @@
+{
+  "name": "eci-test",
+  "version": "1.0.0",
+  "description": "\"creating a test web page for ECI development interview\"",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Adeyinka (Yinkash1000@gmail.com)",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

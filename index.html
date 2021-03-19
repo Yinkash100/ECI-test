@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+
+  <title>ECI Test</title>
+</head>
+<body class="home">
+<section class="hero">
+  <div class="bg-video">
+    <video id="hero-video" class="bg-video__content" loop autoplay muted>
+      <source src="assets/images/hero.mp4" type="video/mp4" />
+      <source src="assets/images/hero.webm" type="video/webm" />
+      Your browser is not supported
+    </video>
+  </div>
+  <div class="hero-text">
+    <div class="hero-text--head">
+      Communities in Latin America
+    </div>
+    <div class="hero-text--main">
+        We deliver inspired residences for adventorous souls
+      </div>
+  </div>
+  <div class="video-control">
+    <div class="video-control-btn">
+      <button class="btn btn-icon" id="mute-control" title="unmute audio">
+        <img id="mute-status" src="assets/icons/mute.svg" alt="" >
+      </button>
+    </div>
+    <div class="video-control-btn">
+      <button class="btn btn-icon" id="backward-btn" title="backward 4s">
+        <img src="assets/icons/backward-arrow.svg" alt="">
+      </button>
+    </div>
+    <div class="video-control-btn">
+      <button id="play-btn"  class="btn btn-icon" title="pause">
+        <img id="play-status" src="assets/icons/pause.svg" alt="">
+      </button>
+    </div>
+    <div class="video-control-btn">
+      <button class="btn btn-icon" id="forward-btn" title="forward 4s">
+        <img src="assets/icons/fast-forward.svg" alt="" >
+      </button>
+    </div>
+    <div class="video-control-btn">
+      <button class="btn btn-icon" id="loop-btn" title="restart">
+        <img src="assets/icons/reload.svg" alt="" >
+      </button>
+    </div>
+  </div>
+</section>
+<section class="section-intro">
+  <div class="intro">
+    <div class="intro__head">
+      THE ECI ADVANTAGE
+    </div>
+    <div class="intro__main">
+      Whether you are planning to own or rent your new home in paradise, ECI Development offers options for many.
+      Want to change your everyday reality to affordable luxury even as you stop working?
+      Want to get in on the expansion of a proven business model as it moves into new territory?
+    </div>
+    <div class="intro__button">
+      <button class="btn  btn-tertiary intro__button--btn">
+        See all Communities
+        <img src="" alt="">
+      </button>
+    </div>
+  </div>
+</section>
+<section class="cards">
+  <div class="card">
+      <div class="card__picture card__picture--1"></div>
+    <h4 class="card__heading">
+      <span
+          class="card__heading--span card__heading--span-2"
+      >
+        Grand Baymen in Belize
+      </span>
+    </h4>
+      <div class="card__details">
+        Conveniently nestled out of the tourist tracks yet only a few steps from San Pedro Town, Grand Baymen is located only a couple of blocks from the Caribbean waters.
+      </div>
+    <div class="card__action">
+      <button class="btn card__cta card__cta--primary">
+        Details
+        <img src="assets/icons/right-arrow-angle.svg" alt="" class="card__cta--image">
+      </button>
+    </div>
+  </div>
+  <div class="card">
+  <div class="card__picture card__picture--2"></div>
+    <h4 class="card__heading">
+        <span
+            class="card__heading--span card__heading--span-1"
+        >
+          Tiny Homes in Belize
+        </span>
+    </h4>
+
+    <div class="card__details">
+      Surrounded by a peaceful aura, incredible sunsets and a captivating night sky illuminated with bright white stars, you’ll find the charming Tiny-Eco Smart (TES) Village.
+    </div>
+
+  <div class="card__action">
+    <button class="btn card__cta card__cta--secondary">
+      Details
+      <img src="assets/icons/right-arrow-angle.svg" alt="" class="card__cta--image">
+    </button>
+  </div>
+</div>
+  <div class="card">
+    <div class="card__picture card__picture--3"></div>
+    <h4 class="card__heading">
+        <span
+            class="card__heading--span card__heading--span-3"
+        >
+          Gran Pacifica Nicaragua
+        </span>
+    </h4>
+      <div class="card__details">
+        Gran Pacifica Beach & Golf Resort is Nicaragua’s premier residential community
+        and resort.
+      </div>
+    <div class="card__action">
+      <button class="btn card__cta card__cta--tertiary">
+        Details
+        <img src="assets/icons/right-arrow-angle.svg" alt="" class="card__cta--image">
+      </button>
+    </div>
+  </div>
+</section>
+<section class="form-section">
+  <div class="contact-section">
+  <form action="https://script.google.com/macros/s/AKfycbw8sJ1NoGqeqRoMuN-3ubGiV5kMSoN0UYFJmD2A/exec" class="form" id="contact-form" method="post" >
+      <h3 class="form__head">Get In Touch</h3>
+      <div class="form__group">
+        <input
+            id="name"
+            name="name"
+            type="text"
+            onblur="validateName()"
+            class="form__input"
+            placeholder="* Your Name"
+        />
+        <span class="form__error-message" id="nameValidator"></span>
+      </div>
+      <div class="form__group">
+        <input
+            id="email"
+            name="email"
+            type="email"
+            onblur="validateEmail()"
+            class="form__input"
+            placeholder="* Your Email"
+        />
+
+        <span class="form__error-message" id="emailValidator"></span>
+      </div>
+      <div class="form__group">
+        <input
+            id="phoneNumber"
+            type="text"
+            name="phone"
+            class="form__input"
+            placeholder="Your Phone"
+        />
+      </div>
+      <div class="form__group mb-5">
+        <textarea
+            id="message"
+            name="message"
+            class="form__textarea"
+            cols="30"
+            rows="10"
+            onblur="validateMessage()"
+            placeholder="* Write a Message"
+        ></textarea>
+        <span class="form__error-message" id="messageValidator"></span>
+      </div>
+      <div class="form__group">
+        <span id="errorMessage" style="color: red;"></span>
+        <input
+            type="button"
+            onclick="validateAll()"
+            class="btn btn-tertiary"
+            value="Send Message"
+        />
+        <input type="submit" name="" id="submit-button"style="display: none;">
+      </div>
+    </form>
+</div>
+</section>
+<script type="text/javascript" src="scripts/validator.min.js"></script>
+<script type="text/javascript" src="scripts/form-control.js"></script>
+<script src="scripts/bg-control.js" type="text/javascript"></script>
+</body>
+</html>

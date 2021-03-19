@@ -1,0 +1,168 @@
+.home{
+  .hero {
+    height: 100vh;
+    min-height: 400px;
+    position: relative;
+
+    &-text{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      width: 70%;
+      color: #000;
+      font-weight: 400;
+      font-size: 1.25rem;
+      padding: 1rem 0.5rem;
+      line-height: 2rem;
+      font-family: 'Libre Baskerville', serif;
+      @include respond(tab-land){
+        font-size: 1rem;
+        line-height: 1rem;
+        width: 80%;
+      }
+      @include respond(smart-phone) {
+        width: 90%;
+        padding: 1rem 0.25rem;
+      }
+      &--head{
+        margin-bottom: 1rem;
+      }
+      &--main {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        @include respond(tab-land){
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+    .video-control{
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-weight: 800;
+      font-size: 1.2rem;
+      .video-control-btn {
+        padding: 0.5rem 0;
+      }
+      .btn-icon {
+        background-color: rgba($color-black, 0.9);
+        border: none;
+        border-radius: 0;
+        padding: 0.25rem 1rem;
+        img {
+          width: 1rem;
+        }
+        @include respond(smart-phone){
+          padding: 0.25rem 0.75rem;
+          img{
+            width: 0.75rem;
+          }
+
+        }
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 5rem 2rem;
+    @include respond(smart-phone) {
+      margin: 3rem 1rem;
+    }
+  }
+  .form-section {
+    padding: 3rem 2rem;
+    background-color: $color-tertiary-dark;
+    @include respond(smart-phone){
+      padding: 3rem 1rem;
+    }
+    @include respond(smart-phone){
+      padding: 3rem 0.5rem;
+    }
+  }
+  .contact-section {
+    background-image: linear-gradient(
+                    105deg
+            , rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.79) 50%, rgba(0, 0, 0, 0) 50%, transparent), url(../assets/images/form-bg.jpeg);
+    background-color: $color-tertiary-dark;
+    background-size: 100%;
+    border-radius: .3rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    // height: 50rem;
+    @include respond(tab-port){
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: linear-gradient(
+                      180deg
+              , rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 100%, transparent), url(../assets/images/form-bg.jpeg);
+    }
+    .form{
+      width: 100%;
+      max-width: 500px;
+      padding: 2rem 1rem 2rem 3rem;
+      @include respond(tab-land){
+        padding: 2rem 1rem 2rem 1rem;
+      }
+      &__head {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 600;
+        color: $color-tertiary-dark;
+        padding-bottom: 1.5rem;
+      }
+      &__input, &__textarea {
+        border: none;
+        border-bottom: 1px solid $color-grey-dark;
+        // background-color: rgba($color-tertiary-dark, 0.1);
+      }
+    }
+  }
+  .section-intro{
+    padding: 3rem 2rem;
+    @include respond(smart-phone){
+      padding: 2rem 1rem;
+    }
+    .intro{
+      padding: 2rem 2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      @include respond(tab-land){
+        padding: 2rem 0;
+      }
+      &__head {
+        margin: 0 0 2rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        max-width: 600px;
+        color: $color-black;
+        @include respond(tab-land) {
+          font-size: 2rem;
+          line-height: 2.5rem;
+        }
+        @include respond(smart-phone) {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+      }
+      &__main{
+        font-size: 16px;
+        line-height: 26px;
+        text-align: justify;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

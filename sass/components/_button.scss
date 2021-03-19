@@ -1,0 +1,28 @@
+.btn{
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+  &:after {
+    outline: none;
+  }
+}
+.btn-primary{
+  color: $color-white;
+  background-color: $color-primary;
+}
+.btn-secondary{
+  color: $color-white;
+  background-color: $color-secondary-dark;
+}
+
+.btn-tertiary{
+  color: $color-white;
+  background-color: $color-tertiary-dark;
+}

@@ -1,0 +1,89 @@
+.card{
+   //===========FEATURES============//
+   perspective: 150rem;
+   -moz-perspective: 150rem;
+   position: relative;
+   height: 600px;
+   min-width: 300px;
+   width: 31%;
+   margin: 3rem 0;
+   box-shadow: 0 0 10px;
+   &__picture{
+      background-size: cover;
+      height: 20rem;
+      background-blend-mode: soft-light;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 69%, 19% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 69%, 19% 100%, 0 100%);
+      &--1{
+          background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../assets/images/berman.jpeg);
+      }
+      &--2{
+          background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../assets/images/small-homes.jpeg);
+      }
+      &--3{
+          background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../assets/images/city.jpeg);
+      }
+   }
+
+   &__heading {
+      font-size: 1.8em;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-align: right;
+      color: $color-white;
+      position: absolute;
+      top: 12rem;
+      right: 2rem;
+      width: 75%
+   }
+   &__heading--span{
+      padding: .5rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+      line-height: 2.5rem;
+      &-1{
+         background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .8));
+      }
+      &-2{
+         background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .8));
+      }
+      &-3{
+         background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .8));
+      }
+   }
+
+   &__details{
+      width: 90%;
+      margin: 1rem auto;
+      text-align: justify;
+      color: $color-black;
+      font-size: 1rem;
+      line-height: 1.5rem;
+   }
+   &__action {
+      text-align: center;
+      position: absolute;
+      bottom: 2rem;
+      width: 100%;
+   }
+   &__cta {
+      border-radius: 5rem;
+      padding: 0.75rem 3rem;
+      color: $color-white;
+      font-weight: 600;
+      font-size: 1.05rem;
+      &--image {
+         margin-left: 0.5rem;
+         width: 0.75rem;
+      }
+      &--primary{
+         background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba($color-primary-dark, .8));
+      }
+      &--secondary{
+         background-image: linear-gradient(to right bottom, rgba($color-secondary-light, .85), rgba($color-secondary-dark, .8));
+      }
+      &--tertiary {
+         background-image: linear-gradient(to right bottom, rgba($color-tertiary-light, .85), rgba($color-tertiary-dark, .8));
+      }
+   }
+}
